@@ -1,0 +1,236 @@
+body {
+	background: url('https://i.imgur.com/zxIiRBc.jpg') top center fixed;
+	background-size: cover;
+	font-family: cairo,'cairo', calibri;
+}
+
+.container-fluid {
+	padding-bottom: 20px;
+}
+
+.first-row {
+	background-color: #eee;
+	padding:0px 0px 55px 0px;
+	margin:140px 5% 0 5%;
+	border-radius: 5px;
+}
+
+/*-----Cover
+--------------------*/
+
+.bg-cover {
+	height: 350px;
+	background: url('https://i.imgur.com/zxIiRBc.jpg') bottom center;
+	background-size: cover;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.profile-img {
+	opacity: 0.98;
+	position: relative;
+	top:-95px;
+}
+
+.me {
+	border: 5px solid #fff;
+	border-radius: 100%;
+}
+
+.titles {
+	background: ;
+	color: #eee;
+	margin-top: -65px;
+}
+
+.make-bold {
+	font-weight: bold;
+  color: #17f;
+  cursor:pointer;
+}
+
+#title {
+	font-size: 60px;
+}
+
+#subtitle {
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+/*-----menu
+--------------------*/
+
+.header {
+	max-width: 100%; 
+	margin-left: 0px;
+	background: #111;
+	color: #fff;
+	opacity: 0.94;
+}
+
+.menu {
+	padding: 13px 0px 13px 0px;
+	color: #fff;
+}
+
+.menu:hover {
+	background: #222;
+}
+
+.active {
+   	font-size: 13px;
+   	opacity: 0.86;
+}
+
+/*-----body
+--------------------*/
+
+.main-section {
+	margin-bottom: 20px;
+
+}
+
+.heading {
+	margin: 50px 0px 0px 0px;
+	color: #333;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+.under-heading {
+	margin-top: 8px;
+	border-top : 3px solid #666;
+	max-width: 50px;
+}
+
+.info {
+	font-size: 20px;
+	padding: 15px 7% 0px 7%;
+	color: #444;
+	font-weight: lighter;
+}
+
+.info-for-port {
+	font-size: 17px;
+	padding: 15px 2% 0px 2%;
+}
+
+.info-for-contact {
+	font-size: 17px;
+	padding: 15px 5% 0px 5%;
+}
+
+.info-for-social {
+	padding-top: 20px;
+}
+
+.btn-mine {
+	background: none;
+	border-radius: 2px;
+	border: 1px solid #666;
+	color: #444;
+	transition-duration: 0.3s;
+}
+
+.portfolio-img {
+	transition-duration: 0.3s;
+	margin-bottom: 10px;
+}
+
+.portfolio-img:hover {
+	opacity: 0.9;
+	cursor: pointer;
+}
+
+.bite {
+	color: #777;
+	font-family: cairo;
+}
+
+.form-control {
+	width: 90%;
+	transition-duration: 0.2s;
+  font-family:'cairo';
+}
+
+.form-control:focus {
+	border: 2px solid #666;
+}
+
+#msg {
+	resize:none;
+	height: 100px;
+}
+
+
+.my-submit-btn {
+	width: 120px;
+	border-radius: 2px;
+}
+
+#map {
+	margin: 45px 0px 0px 0px;
+    height: 305px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+}
+
+.connect {
+	margin-top: 70px;
+}
+
+.social-link {
+	color: #fff;
+	font-size: 16px;
+	padding: 11px 20px 11px 20px;
+	margin: 0px 10px 0px 10px;
+	border-radius: 100%;
+	transition-duration: 0.2s;
+	opacity: 0.8;
+}
+
+.social-link:hover {
+	opacity: 1.0;
+}
+
+.for-facebook {
+	padding: 11px 23px 11px 23px;
+}
+
+.for-facebook {
+	background: #3b5998;
+}
+
+.for-twitter {
+	background: #55acee;
+}
+
+.for-linkedin {
+	background: #16a;
+}
+
+.for-instagram {
+	background: #3f729b;
+}
+
+.for-github {
+	background: #316;
+}
+/*-----body
+--------------------*/
+
+.footer {
+	margin-top: 50px;
+	color: white;
+	font-size: 17px;
+}
+
+a {
+	color: #17f;
+	text-decoration: none !important;
+}
+
+a:hover {
+	color: #17f;
+}

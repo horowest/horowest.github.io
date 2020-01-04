@@ -1,0 +1,181 @@
+<head>
+	<title>Akash Saha | horowest</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Icon-->
+    <link rel="icon" href="https://i.imgur.com/6EUbKWx.png">
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Cairo|Cairo:300" rel="stylesheet">
+    <!--StyleSheets-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!--Scripts-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.scrolltofixed/0.1/jquery-scrolltofixed-min.js"></script>
+	<!--Written Scripts-->
+	<script>
+		$(document).ready(function(){
+  		// Add smooth scrolling to all links
+  			$("a").on('click', function(event) {
+
+    		// Make sure this.hash has a value before overriding default behavior
+    		if (this.hash !== "") {
+      		// Prevent default anchor click behavior
+      		event.preventDefault();
+
+      		// Store hash
+      		var hash = this.hash;
+
+      		// Using jQuery's animate() method to add smooth page scroll
+      		// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      		$('html, body').animate({
+        		scrollTop: $(hash).offset().top
+      		}, 800, function(){
+   
+        	// Add hash (#) to URL when done scrolling (default click behavior)
+        	window.location.hash = hash;
+      		});
+    		} // End if
+  			});
+		});
+	</script>
+	<script type="text/javascript">
+    	$(document).ready(function(e) {
+        $('.header').scrollToFixed();
+    	});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+    		$(document).on("scroll", onScroll);
+    
+    		//smoothscroll
+    		$('a[href^="#"]').on('click', function (e) {
+        		e.preventDefault();
+        		$(document).off("scroll");
+        
+        		$('a').each(function () {
+            		$(this).removeClass('active');
+        		})
+        		$(this).addClass('active');
+      
+        		var target = this.hash,
+            		menu = target;
+        		$target = $(target);
+        		$('html, body').stop().animate({
+            		'scrollTop': $target.offset().top+2
+        		}, 800, 'swing', function () {
+            	window.location.hash = target;
+            	$(document).on("scroll", onScroll);
+        		});
+    		});
+		});
+
+		function onScroll(event){
+	    	var scrollPos = $(document).scrollTop();
+    		$('#menu-center a').each(function () {
+        		var currLink = $(this);
+        		var refElement = $(currLink.attr("href"));
+	        	if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            			$('#menu-center ul li a').removeClass("active");
+            			currLink.addClass("active");
+        		}
+        		else{
+   		         	currLink.removeClass("active");
+    	    	}
+    		});
+		}
+	</script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row first-row">
+			<!--------------------------------Cover------------------------------>
+			<div class="bg-cover text-center">
+				<div class="text-xs-center profile-img">
+  					<img src="https://i.imgur.com/3glV5HI.png" class="me img-rounded" alt="Akash Saha">
+				</div>
+				<div class="titles">
+					<span id="title">Hi, I'm <span class="make-bold" href="#" title="Okay, that's my name!">Akash Saha</span></span><br>
+					<span id="subtitle">A Computer Science student from Durgapur, WB.</span>
+				</div>
+			</div>
+			<!----------------------------------Header---------------------------->
+			<div  id="menu-center" class="row header text-center">
+				<a class="" href="#aboutme"><div id="menu1" class="menu col-md-4">About Me</div></a>
+				<a class="" href="#portfolio"><div id="menu3" class="menu col-md-4">Portfolio</div></a>
+				<a class="" href="#contact"><div id="menu4" class="menu col-md-4">Contact</div></a>
+			</div>
+			<!------------------------------------Main----------------------------->
+
+			<!--------------------About---------------------->
+			<div id="aboutme" class="row main-section about text-center">
+				<div class="heading">About Me<br><hr class="under-heading"></div>
+				<div class="info">Hi, I'm Akash. I'm a high school graduate currenty studying Full Stack Development. Being a computer science student I had plenty of opertunity to become familiar with programming for some time. Right now, I'm well-versed in few programming languages like Java, C and PHP. Also there's Linux now added to my comfort zone. Beside sitting in front of my computer all day I also study theoretical physics and mathematics and I love 9GAG.</div>
+				<br>
+				<button class="btn btn-primary btn-mine" onclick="not_available();" title="Download Resume">Download R&#233sum&#233</button>
+			</div>
+			<!----------------------About-------------------->
+
+			<!----------------------Resume-------------------->
+			<!--<div id="resume" class="row main-section resume text-center">
+				<div class="heading">R&#233sum&#233<br><hr class="under-heading"></div>
+				<div class="info">Sorry my R&#233sum&#233 is not yet available, but I will update it some time soon! <i class="fa fa-thumbs-up"></i></div>
+			</div>-->
+			<!----------------------Resume-------------------->
+
+			<!---------------------Portfolio------------------>
+			<div id="portfolio" class="row main-section portfolio text-center">
+				<div class="heading">Portfolio<br><hr class="under-heading"></div>
+				<div class="info-for-port">
+					<div class="portfolio-img col-md-4"><img src="https://i.imgur.com/zh4fQZI.jpg" class="port img-responsive" title="My Portfolio" alt="Portfolio"></div>
+					<div class="portfolio-img col-md-4"><img src="https://i.imgur.com/zh4fQZI.jpg" class="port img-responsive"title="My Portfolio" alt="Portfolio"></div>
+					<div class="portfolio-img col-md-4"><img src="https://i.imgur.com/zh4fQZI.jpg" class="port img-responsive"title="My Portfolio" alt="Portfolio"></div>
+				</div>
+			</div>
+			<!---------------------Portfolio---------------->
+
+			<!---------------------Contact------------------>
+			<div id="contact" class="row main-section contact text-center">
+				<div class="heading">CONTACT<br><hr class="under-heading"></div>
+				<div class="info-for-contact">
+					<div class="contact message col-md-6 text-left">
+						<h3 class="bite">Let's get in touch, I don't bite!</h3>
+  						<div class="form-group">
+    						<label for="InputText1"></label>
+    						<input type="Name" class="form-control" id="InputText1" placeholder="Name">
+  						</div>						
+						<div class="form-group">
+    						<input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Email">
+    						<small id="emailHelp" class="form-text text-muted"> *I'll never share your email with anyone else. Promise!</small>
+  						</div>
+						<div class="form-group">
+    						<textarea class="form-control" id="msg" placeholder="Message"></textarea>
+  						</div>
+						<button type="submit" class="btn btn-primary my-submit-btn">Submit</button>
+					</div>
+					<div id="map" class="col-md-6"><script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:300px;width:533px;margin-left:-15px;'><div id='gmap_canvas' style='height:300px;width:533px;'></div><div><small><a href="http://www.embedgooglemaps.com/en/">Generate your map here, quick and easy!									Give your customers directions									Get found</a></small></div><div><small><a href="https://binaireoptieservaringen.nl/">Ga naar de site!</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(23.520633292772903,87.26761531324459),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(23.520633292772903,87.26761531324459)});infowindow = new google.maps.InfoWindow({content:"<strong>I'm Here!</strong><br>"});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script></div>
+
+
+				</div>
+			</div>
+			<!--------------------Contact------------------->
+
+			<!-------------------Social Links---------------->
+			<div id="connect" class="row main-section connect text-center">
+				<div class="info-for-social">
+					<a href="https://linkedin.com/in/akashsaha04">
+						<span class="social-link for-linkedin" title="LinkedIn"><i class="fa fa-linkedin"></i></span>
+					</a>
+					<a href="https://github.com/akashvevo">
+						<span class="social-link for-github" title="Github"><i class="fa fa-github"></i></span>
+					</a>
+				</div>
+			</div>
+			<!-----------------------Social Links---------------------->
+
+		</div>		
+		<!-----------------------------------Main---------------------------->
+
+		<div class="footer text-center">Made with <i class="small fa fa-heart"></i> and <i class="small fa fa-coffee"></i> by <a href="https://freecodecamp.com/akashvevo">Akash Saha</a></div>
+	</div>
+</body> 
