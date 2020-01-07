@@ -29,18 +29,18 @@ body {
 .profile-img {
 	opacity: 0.98;
 	position: relative;
-	top:-95px;
+	top:-90px;
 }
 
 .me {
-	border: 5px solid #fff;
+	border: 5px solid #ddd;
 	border-radius: 100%;
 }
 
 .titles {
 	background: ;
 	color: #eee;
-	margin-top: -65px;
+	margin-top: -75px;
 }
 
 .make-bold {
